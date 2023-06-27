@@ -26,7 +26,7 @@ config['device'] = torch.device('cuda') if torch.cuda.is_available() else torch.
 buffer = BufferList(config['buffer_size'])
 agent = Agent(env_eval, config)
 
-load_parameters(agent,'log_turtlebot_2_goal_3_obs_nobn_3layer_1discretize_100secs_square_obs',config['device'])
+load_parameters(agent,'log_trained',config['device'])
 epi_len = config['epi_len_eval']
 
 plot = []
